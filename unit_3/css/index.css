@@ -1,0 +1,330 @@
+#flex{
+    height: auto;
+    width: auto;
+    background-color:  rgba(178, 178, 178, 1);
+}
+#wrapper{
+    height: 3800px;
+    min-width: 830px;
+    max-width: 1200px;
+    
+    margin: auto;
+    background:white url(../images/design1five.png) no-repeat
+    
+    ;
+    background-size: contain;
+    
+    
+
+}
+#navbar{
+    width: auto;
+    height: 100px;
+}
+#visionarylogo{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    float: left;
+    left: 24px;
+    top: 15px;
+    background-color: rgba(0, 0, 0, .5);
+}
+#visionarytitle{
+    float: left;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    left: 30px;
+    top: 22.5px;
+    width: 200px;
+}
+.navcta{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    vertical-align: middle;
+    text-align: center;
+    float: right;
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+    margin-right: 24px;
+    margin-left: 12px;
+    top: 25px;
+    padding: 18px;
+    font-weight: 600;
+}
+.herotitle{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: 1000;
+    font-size: 30pt;
+    position: relative;
+    text-align: center;
+    
+
+}
+.herocaption{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 11pt;
+    position: relative;
+    
+   max-width: 55%;
+    margin: auto;
+}
+ #skillsheader{
+    clear: both;
+    left: 14%;
+    top: 120px;
+    text-align: center;
+}
+
+.contentbox{
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13pt;
+    width: 27.5%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+}
+#ux{
+    float: left;
+    top: 250px;
+    left: 2.5%;
+    
+}
+#graphicdesign{
+    float: left;
+    top: 400px;
+    left: 8.75%;
+    
+}
+#webdev{
+    float: right;
+    top: 550px;
+    right: 2.5%;
+    
+} 
+#qualheader{
+    clear: both;
+    right: 12%;
+    top: 620px;  
+    font-size: 25pt !important;
+ 
+}
+
+#exp{
+    float: left;
+    top: 1000px;
+    left: 2.5%;
+}
+#projects{
+    float: left;
+    top: 850px;
+    left: 8.75%;
+}
+#cert{
+    float: right;
+    top: 700px;
+    right: 2.5%;
+}
+#aboutmebox{
+    clear: both;
+    top: 1100px;
+    left: 5%;
+
+}
+.primaryboxes{
+    position: relative;
+    width: 90%;
+    height: 550px;
+    background-color:  rgba(0, 0, 0, .5);
+}
+#aboutmebar{
+    height: 157.14px;
+    background-color: rgba(0, 0, 0, .2);
+}
+#me{
+    height: 133px;
+    width: 133px;
+    border-radius: 75px;
+    background-color: rgba(0, 0, 0, .5);
+    float: left;
+    margin-left: 2%;
+    margin-top: 12.5px;
+}
+#aboutmeheader{
+    float: right;
+    background-color:  rgba(255, 255, 255, .2);
+    top: 10px;
+    position: relative;
+    margin-right: 2%;
+    margin-top: 12.5px;
+    padding: 35px;
+    font-size: 27pt;
+}
+#aboutmetext{
+    width: 94%;
+    height: 279.7px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color:  rgba(255, 255, 255, .2);
+    padding: 5px;
+    font-size: 17pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contentbar{
+height: 83px;
+background-color: rgba(0, 0, 0, .2);
+}
+#redirect{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 1.5vw;
+max-width: 70%;
+margin-left: 2%;
+vertical-align: middle;
+margin-top: 0;
+margin-bottom: 0;
+padding-top: 35px;
+float: left;
+}
+.basiccta{
+    width: 20%;
+    height: 48.714px;
+    float: right;
+    margin-right: 1%;
+    margin-top: 22.5px;
+    font-family: Helvetica, sans-serif, Arial;
+    font-size: 14pt;
+    background-color: rgba(255, 255, 255, .2);
+}
+#contactbox{
+    clear: both;
+    top: 1200px;
+    left: 5%;
+
+}
+#contactheader{
+    text-align: center;
+    padding: 15px;
+    font-family: Helvetica, sans-serif;
+    font-size: 22pt;
+    background-color: rgba(255, 255, 255, .2);
+    max-width: 20%;
+    margin: auto;
+    top: 10px;
+    position: relative;
+}
+#contactbody{
+    height: 384px;
+
+}
+.contactsect{
+    
+    float: left;
+    background-color:  rgba(255, 255, 255, .2);
+    top: 10px;
+    position: relative;
+    margin-left: 7%;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 20pt;
+}
+.clear{
+    clear: both;
+}
+.contactinput{
+    float: left;
+    background-color:  rgba(255, 255, 255, .2);
+    top: 10px;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 88%;
+    height: 30px;
+    padding: 5px;
+    font-size: 20pt;
+}
+#contactinputlrg{
+    float: left;
+    background-color:  rgba(255, 255, 255, .2);
+    top: 10px;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 88%;
+    height: 150px;
+    padding: 5px;
+    font-size: 20pt;
+}
+#left{
+    height: 384px;
+    width: 40%;
+    float: left;
+}
+#right{
+    height: 384px;
+    width: 60%;
+    float: left;
+}
+#footer{
+    position: relative;
+    top: 1225px;
+    height: 200px;
+    width: auto;
+}
+#resume{
+    float: left;
+    margin-left: 10%;
+    margin-top: 0px;
+    margin-right: 4%;
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+}
+#mailto{
+    
+    float: left;
+    margin-left: 5%;
+    margin-top: 0px;
+    margin-right: 9%;
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+}
+#footerrefs{
+    float: left;
+    width: 45%;
+    height: 100px;
+}
+.links{
+    float: left;
+    margin-top: 0px;
+    margin-right: 5%;
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+}
+#workscited{
+    top: 75px;
+    position: relative;
+    clear: left;
+    text-align: center;
+    font-size: 8pt;
+    font-style: italic;
+    margin: auto;
+}
+#hero{
+    max-width: 1200px; 
+    height: auto; 
+    opacity: 2;
+    opacity: .50; /* Standard: FF gt 1.5, Opera, Safari, CSS3 */
+    filter: alpha(opacity=50); /* IE lt 8 */
+    -ms-filter: "alpha(opacity=50)"; /* IE 8 */
+    -khtml-opacity: .50; /* Safari 1.x */
+    -moz-opacity: .50; /* FF lt 1.5, Netscape */ 
+}
