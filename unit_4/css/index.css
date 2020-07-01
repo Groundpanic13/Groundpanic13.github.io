@@ -1,13 +1,30 @@
-/* header fonts, merriweather, lora */
+/* header fonts, merriweather, lora (serifs) */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-/* subheader fonts, muli, raleway */
+/* subheader fonts, muli, raleway (sans serifs) */
 @import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* body, exo 2, IBM plex sans */
+/* body, exo 2, IBM plex sans (sans serifs) */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+.exo{
+font-family: 'exo 2';
+}
+.ibm{
+font-family: 'IBM plex sans';
+}
+.merri{
+font-family: 'merriweather';
+}
+.rale{
+font-family: 'raleway';
+}
+.hel{
+font-family: Helvetica, sans-serif;
+}
+/* .lora{
+font-family: 'lora';
+} */
 #flex{
     height: auto;
     width: auto;
@@ -17,17 +34,14 @@
     height: 3800px;
     min-width: 830px;
     max-width: 1200px;
-    
     margin: auto;
-    background:white url(../images/design1seven.png) no-repeat
-    
-    ;
+    background:white url(../images/design1seven.png) no-repeat;
     background-size: contain;
     
     
 
 }
-#navbar{
+nav{
     width: auto;
     height: 100px;
 }
@@ -37,17 +51,14 @@
     height: 75px;
     border-radius: 100px;
     float: left;
-    left: 24px;
-    top: 15px;
+    margin: 15px 0 0 24px;
     background-color: rgba(0, 0, 0, .5);
 }
 #visionarytitle{
     float: left;
     position: relative;
-    font-family: 'raleway', Verdana, sans-serif;
     font-size: 15pt;
-    left: 30px;
-    top: 22.5px;
+    margin: 42px 0 0 8px;
     width: 200px;
 }
 .navcta{
@@ -57,9 +68,7 @@
     float: right;
     background-color: rgba(0, 0, 0, .5);
     position: relative;
-    margin-right: 24px;
-    margin-left: 12px;
-    top: 25px;
+    margin: 25px 24px 0 12px;
     padding: 18px;
     font-weight: 600;
 }
@@ -69,27 +78,27 @@
     font-size: 30pt;
     position: relative;
     text-align: center;
+    max-width: 70%;
     
 
 }
 .herocaption{
-    font-family: 'ibm plex sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'ibm plex sans', sans-serif;
     font-size: 11pt;
     position: relative;
-    
-   max-width: 55%;
+    max-width: 55%;
     margin: auto;
 }
- #skillsheader{
+header{
     clear: both;
-    left: 14%;
+    left: 30%;
     top: 120px;
     text-align: center;
 }
 
 .contentbox{
     position: relative;
-    font-family: 'raleway', Verdana, sans-serif;
+    font-family: 'raleway';
     font-size: 13pt;
     width: 27.5%;
     height: 500px;
@@ -98,28 +107,21 @@
 }
 #ux{
     float: left;
-    top: 250px;
-    left: 2.5%;
-    
+    margin: 250px 0 0 2.5%;
 }
 #graphicdesign{
     float: left;
-    top: 400px;
-    left: 8.75%;
-    
+    margin: 400px 0 0 6.5%;
 }
 #webdev{
     float: right;
-    top: 550px;
-    right: 2.5%;
-    
+    margin: 550px 2.5% 0 0%;
 } 
 #qualheader{
     clear: both;
     right: 12%;
     top: 620px;  
     font-size: 25pt !important;
- 
 }
 
 #exp{
@@ -171,7 +173,6 @@
     margin-top: 12.5px;
     padding: 35px;
     font-size: 27pt;
-    font-family: 'merriweather';
 }
 #aboutmetext{
     width: 94%;
@@ -183,14 +184,12 @@
     background-color:  rgba(255, 255, 255, .2);
     padding: 5px;
     font-size: 17pt;
-    font-family: 'ibm plex sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .contentbar{
 height: 83px;
 background-color: rgba(0, 0, 0, .2);
 }
 #redirect{
-font-family: 'exo 2','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-size: 14pt;
 max-width: 70%;
 margin-left: 2%;
@@ -206,7 +205,7 @@ float: left;
     float: right;
     margin-right: 1%;
     margin-top: 22.5px;
-    font-family: 'raleway', Helvetica, sans-serif, Arial;
+    font-family: 'raleway';
     font-size: 14pt;
     background-color: rgba(255, 255, 255, .2);
 }
@@ -219,7 +218,6 @@ float: left;
 #contactheader{
     text-align: center;
     padding: 15px;
-    font-family: 'merriweather', Helvetica, sans-serif;
     font-size: 22pt;
     background-color: rgba(255, 255, 255, .2);
     max-width: 20%;
@@ -286,7 +284,7 @@ float: left;
     width: 60%;
     float: left;
 }
-#footer{
+footer{
     position: relative;
     top: 1225px;
     height: 200px;
@@ -297,7 +295,6 @@ float: left;
     margin-left: 10%;
     margin-top: 0px;
     margin-right: 4%;
-    font-family: 'ibm plex sans';
     font-size: 12pt;
 }
 #mailto{
@@ -307,21 +304,18 @@ float: left;
     margin-top: 0px;
     margin-right: 9%;
     font-size: 12pt;
-    font-family: 'helvetica';
 }
 #footerrefs{
     float: left;
     width: 45%;
     height: 100px;
-    font-family: 'helvetica';
 }
 .links{
     float: left;
     margin-top: 0px;
     margin-right: 5%;
-    font-family: Helvetica, sans-serif;
     font-size: 12pt;
-    
+    font-family: Helvetica, sans-serif;
 }
 #workscited{
     top: 75px;
@@ -331,5 +325,4 @@ float: left;
     font-size: 8pt;
     font-style: italic;
     margin: auto;
-    font-family: 'helvetica';
 }
