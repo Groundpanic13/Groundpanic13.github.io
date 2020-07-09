@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visionary</title>
+</head>
+<body>
+<div id="hero">
+<!-- <div id="hero2" class="clearfix"> -->
+    <div id="wrapper" class="clearfix">
+
+   
+    <header>
+            <section id="visionaryholder">
+                <img src="images/idea.jpg" alt="logo" id="logo">
+                <p id="visionarytitle" class="rale">Visionary</p>
+            </section>
+        <nav>
+            <a id="contactcta" class="navcta clearfix" onclick="smoothScroll(document.getElementById('contactbox'))">
+                <p>Contact</p>
+            </a>
+            <a id="aboutmecta" class="navcta clearfix"onclick="smoothScroll(document.getElementById('aboutmebox'))">
+                
+                <p>About Me</p>
+            </a>
+        </nav>
+    </header>
+    
+
+        <section class="skillshead">
+            <h2 class="herotitle">What is Visionary?</h2>
+            <p  class="herocaption ibm">Visionary is a freelance web development service incorporating reliable and industry-standard elements to create beautiful designs.</p>
+        </section>
+
+        <main>
+
+            
+            <section class="threeboxcolumn clearfix">
+                <section class="contentbox col1">
+                    <a class="content" href="ux.html">
+                        <p class="contentdesc">User Experience </p>
+                    </a>
+                </section>
+                <section class="contentbox col2">
+                    <a class="content" href="graphicdesign.html">
+                        <p class="contentdesc">Graphic Design </p>
+                    </a>
+                </section>
+                <section class="contentbox col3">
+                    <a class="content" href="webdevelopment.html">
+                        <p class="contentdesc">Web Development</p>
+                    </a>
+                </section>
+            </section>
+            
+
+            <section class="skillshead">
+                <h2 class="herotitle">Why should you trust Visionary?</h2>
+                <p  class="herocaption ibm">Visionary is a combination of creative-thinking, great design, and hard work. Don't just take my word for it, see below to check for yourself. </p>
+            </section>
+
+           
+            <section class="threeboxcolumn ">
+                <section id="exp" class="contentbox">
+                     <a class="content" href="workexperience.html">
+                        <p class="contentdesc"> Experience</p>
+                     </a>
+                </section>
+                <section id="projects" class="contentbox">
+                    <a class="content" href="projects.html">
+                        <p class="contentdesc">Projects</p>
+                    </a>
+                </section>
+                <section id="cert" class="contentbox">
+                    <a class="content" href="certifications.html" >
+                        <p class="contentdesc">Certifications</p>
+                    </a>
+                </section>
+            </section>
+            
+
+            <section id="aboutmebox" class="primaryboxes">
+                <div id="aboutmebar">
+                    <img src="images/resumephoto.png" alt="me" id="me">
+                    <div id="aboutmeheader" class="merri">About Me</div>
+                </div>
+                <div id="aboutmetext" class="ibm">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore blanditiis dolor sapiente voluptatibus, vel, cum et fuga fugit necessitatibus, nulla sunt numquam. Perferendis sit iste dolorem quaerat qui facere nobis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quasi. Autem rerum rem, accusantium explicabo similique quo repellendus optio tempore consequatur earum perferendis laboriosam id, natus provident adipisci, aspernatur incidunt.
+                </div>
+                <div class="contentbar">
+                    <p id="redirect" class="exo">Want to know more? Feel free to check out my personal site.</p>
+                    <a class="basiccta" href="https://flynncondit.com"><p id="websitelink">Website</p></a>
+                </div>
+            </section>
+
+            
+
+            <section class="primaryboxes" id="contactbox">
+                <div class="contentbar">
+                    <p id="contactheader" class="merri">Contact</p>
+                </div>
+
+                <div id="contactbody">
+
+                    
+
+                    <div id="inputprompts">
+                        <label class="contactsect clearfix">Name</label>
+                        <label class="contactsect clearfix">Email <i>(required)
+                        </i></label>
+                        <label class="contactsect clearfix">Message</label>
+                    </div>
+                    
+                    <div id="inputfields">
+                        <input class="contactinput clearfix"></input>
+                        <input class="contactinput clearfix"></input>
+                        <input id="contactinputlrg"></input>
+                    </div>
+                </div>
+
+                <div class="contentbar">
+                    <button class="basiccta">Send</button>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer>
+          <p id="resume" class="hel"><a href="https://www.linkedin.com/in/flynn-condit-0986511b0/">Linkedin Resume</a></p>  
+          <!-- <p id="mailto" class="hel"><a href="mailto:flynn222@live.com?subject= What would you like to say?">Contact Me</a></p> -->
+            <div id="footerrefs" class="hel">
+                <p class="links clearfix"><a><b>Home</b></a></p>
+                <p class="links clearfix"><a>User Experience</a></p>
+                <p class="links clearfix"><a>Graphic Design</a></p>
+                <p class="links clearfix"><a>Web Development</a></p>
+                <p class="links clearfix"><a>Certifications</a></p>
+                <p class="links clearfix"><a>Projects</a></p>
+                <p class="links clearfix"><a>Work Experience</a></p>
+            </div>
+            <p id="workscited" class="hel">Created with HTML5, CSS3,  Google reCaptcha v3, all rights reseved.</p>
+        </footer>
+    </div>
+</div>
+<!-- </div> -->
+<script>
+    window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+</body>
+</html>
