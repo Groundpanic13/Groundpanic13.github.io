@@ -113,6 +113,7 @@ nav{
 .navcta:hover{
     background-color:  rgba(0, 0, 0, .8);
     color:  rgba(255, 255, 255, 1);
+    cursor: pointer;
 }
 .herotitle{
     font-family: 'lora','Arial Narrow Bold', sans-serif;
@@ -274,6 +275,7 @@ color: rgba(220, 220, 220, 1);
 .basiccta:hover{
     background-color:  rgba(255, 255, 255, .4);
     color:#0311FC;
+    cursor: pointer;
 }
 #contactbox{
     margin: 100px 0 0 5%;
@@ -385,4 +387,5 @@ footer{
 }
 footer a:hover{
     color:#0311FC;
+    cursor: pointer;
 }
