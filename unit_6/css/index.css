@@ -25,7 +25,7 @@ font-family: Helvetica, sans-serif;
 /* .lora{
 font-family: 'lora';
 } */
-
+*{margin: 0; padding: 0; box-sizing: border-box;}
 a{
     text-decoration: none;
 }
@@ -37,35 +37,38 @@ a{
     clear: both;
     height: 0;
 }
-#hero{
+#flex{
     height: auto;
     width: auto;
-    background: url(../images/design1seven.png) no-repeat;
+    /* background: url(../images/design1seven.png) no-repeat;
     background-size: cover;
     max-height: 1000px;
     width: 100%;
     display: flex;
-    background-position: center center;
+    background-position: center center; */
     
 }
-/* #hero2{
-    height: auto;
-    width: auto;
+.bgimages{
+    position: relative;
+}
+#hero{
+    background: url(../images/design1seven.png) no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+#image2{
     background: url(../images/design2two.png) no-repeat;
     background-size: cover;
-    max-height: 1000px;
-    width: 100%;
-    display: flex;
-    background-position: center center;
-} */
+    height: 2200px;
+    background-position:  0px 1000px;
+}
+
 #wrapper{
     height: auto;
     min-width: 830px;
     max-width: 1200px;
     margin: auto;
-    
-    
-
 }
 nav{
     width: auto;
@@ -78,23 +81,41 @@ nav{
     float: left;
     background-color: rgba(0, 0, 0, .6);
     border-radius: 75px;
-
+    /* transition-duration: .33s; */
+    position: relative;
 }
-
+#visionaryholder:hover #logo{
+    left: 100%;
+    transform: translateX(-100%);
+}
+#visionaryholder:hover #visionarytitle{
+    right: 100%;
+    transform: translate(100%, -50%);
+}
+#visionaryholder *{
+    transition-duration: .33s;
+}
 #logo{
     height: 75px;
     width: 75px;
     border-radius: 100px;
-    margin: 0px 0 0 0px;
     float: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+
 }
 #visionarytitle{
     float: left;
-    position: relative;
+    position: absolute;
     font-size: 15pt;
-    margin: 25px 0 0 15px;
     color: rgba(255, 255, 255, 1);
     text-shadow: 1px 1px 0px  rgba(0, 0, 0, 1);
+    top: 50%;
+    z-index: 1;
+    padding: 1em;
+
 }
 .navcta{
     font-family: 'raleway', Verdana, sans-serif;
@@ -104,7 +125,7 @@ nav{
     background-color: rgba(0, 0, 0, .6);
     position: relative;
     margin: 32px 24px 0 12px;
-    padding: 0 15px 0 15px;
+    padding: 15px;
     font-weight: 600;
     text-decoration: none;
     color: rgba(220, 220, 220, 1);
@@ -134,7 +155,7 @@ nav{
     max-width: 55%;
     margin: 5px;
 }
-.contentbox{
+/* .contentbox{
     position: relative;
     font-family: 'raleway';
     font-size: 13pt;
@@ -142,16 +163,19 @@ nav{
     height: 500px;
     background-color: rgba(0, 0, 0, .5);
     text-align: center;
-}
+} */
 .content{
     position: relative;
     font-family: 'raleway';
-    width: 95%;
+    width: 82.5%;
     height: 480px;
     background-color: rgba(220, 220, 220, 1) ;
-    margin: 10px 2.5% 0 2.5%;
     display: block;
     color: black;
+    border-color: rgba(0, 0, 0, .5);
+    border-width: 10px;
+    border-style: solid;
+    text-align: center;
 }
 .contentdesc{
     position: relative;
@@ -159,10 +183,9 @@ nav{
     padding: 50px 0 0 0;
 }
 .content:hover{
-    width: 90%;
-    height: 460px;
-    margin: 20px 5% 0 5%;
     color: #0311FC;
+    border-width: 20px;
+    border-style: solid;
 }
 .threeboxcolumn{
     margin: 250px 0 0 0;
@@ -170,16 +193,25 @@ nav{
     
 }
 .col1{
-    margin: 0px 0 0 2.5%;
+    position: relative;
     float: left;
+    height: 800px;
+    width: 33.333333%;
+
 }
 .col2{
-    margin: 150px 0 0 6.5%;
+    padding: 150px 0 0 0%;
+    position: relative;
     float: left;
+    height: 800px;
+    width: 33.333333%;
 }
 .col3{
-    margin: 300px 2.5% 0 0%;
-    float: right;
+    padding: 300px 0 0 0%;
+    position: relative;
+    float: left;
+    height: 800px;
+    width: 33.333333%;
 }
 
 #qualheader{
@@ -190,15 +222,23 @@ nav{
 
 #exp{
     float: right;
-    margin: 0px 2.5% 0 0;
+    position: relative;
+    height: 800px;
+    width: 33.333333%;
 }
 #projects{
     float: right;
-    margin: 150px 6.5% 0 0;
+    padding: 150px 0 0 0%;
+    position: relative;
+    height: 800px;
+    width: 33.333333%;
 }
 #cert{
-    float: left;
-    margin: 300px 2.5% 0 0%;
+    float: right;
+    padding: 300px 0 0 0%;
+    position: relative;
+    height: 800px;
+    width: 33.333333%;
 }
 #aboutmebox{
     margin: 100px 0 0 5%;
