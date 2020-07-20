@@ -128,21 +128,30 @@
 
                     <form action="submit.php">
                     
-                        <div id="inputprompts">
-                            <label class="contactsect clearfix">Name</label>
+                            <!-- name label and input -->
+                            <label class="contactsect clearfix" id="namespacer">Name</label>
+
+                            <input type="text" placeholder="name" class="contactinput clearfix" ></input>
+
+                            <!-- name and label end -->
+
+                            <!-- email label and label -->
                             <label class="contactsect clearfix">Email <i>(required)
                             </i></label>
-                            <label class="contactsect clearfix">Message</label>
-                        </div>
-                    
-                        <div id="inputfields">
-                            <input type="text" placeholder="name" class="contactinput clearfix"></input>
+
                             <input class="contactinput clearfix" input type="text" placeholder="email"></input>
+
+                            <!-- email and label end -->
+
+                            <!-- message label and input -->
+                            <label class="contactsect clearfix" id="messagespacer">Message</label>
+
                             <input id="contactinputlrg" input type="text" placeholder="What would you like to say?"></input>
-                        </div>
+
+                            <!--   -->
                 </div>
                         <div class="contentbar">
-                            <input class="basiccta" type="submit" value="Send">
+                            <input class="basiccta" id="sendbutton" type="submit" value="Send">
                         </div>
 
                     </form>

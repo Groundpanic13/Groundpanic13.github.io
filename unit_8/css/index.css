@@ -26,6 +26,7 @@ font-family: Helvetica, sans-serif;
 font-family: 'lora';
 } */
 *{margin: 0; padding: 0; box-sizing: border-box;}
+body{font-size: 16px;}
 a{
     text-decoration: none;
 }
@@ -39,20 +40,20 @@ a{
 }
 #flex{
     height: auto;
-    width: auto;    
+    min-width: auto;    
 }
+
+    /* Tablet and Below Version */
 
 @media screen and (max-width: 830px){
     body #image2{
         clear: both;
-        background: url(../images/design2two.png) no-repeat;
         background-size: cover;
         background-position: center;
         height: 4100px;
         background-position: 0 1000px;
     }
     body #closer{
-        background: url(../images/bottombg4two.png) no-repeat;
         background-size: cover;
         background-position: center;
         height: auto;
@@ -61,14 +62,9 @@ a{
     body .navcta{
         display: none;
     }
-    body #hamburger{
+    body .dropdown{
         display: block;
     }
-
-
-
-
-
     body .threeboxcolumn{
         height: auto;
         /* background-color: lime; */
@@ -90,7 +86,7 @@ a{
         width: 100%;
     }
     body .content{
-    height: 680px;
+        height: 680px;
     }
     body .skillshead{
         clear: both;
@@ -132,7 +128,8 @@ a{
     }
 
     body #aboutmetext{
-        font-size: 15pt;
+        /* font-size: 15pt; */
+        font-size: 1.3em;
     }
     body .aboutmeheader{
         float: right;
@@ -141,13 +138,15 @@ a{
         margin-right: 2%;
         margin-top: 2px;
         padding: 20px;
-        font-size: 25pt;
+        /* font-size: 25pt; */
+        font-size: 2.2em;
         border-radius: 2px;
         color: rgba(220, 220, 220, 1);
 
     }
     body #redirect{
-        font-size: 12pt;
+        /* font-size: 12pt; */
+        font-size: 1.025em;
     }
     body #contactinputlrg{
         margin-top: 50px;
@@ -168,18 +167,135 @@ a{
     }
 
     body #resume{
-    margin-left: 15%;
-    margin-top: 0px;
-    margin-right: 4%;
-    font-size: 12pt;
+        margin-left: 15%;
+        margin-top: 0px;
+        margin-right: 4%;
+        font-size: 12pt;
     }
     body #footerrefs{
         max-width: 70%;
     }
+    body .contactinput{
+        clear: both;
+        float: left;
+        width: 80%;
+        margin-left: 7%;
+    }
+    body #contactinputlrg{
+        clear: both;
+        float: left;
+        margin-left: 7%;
+        top: -20px;
+        width: 80%;
+    }
+    body #contactbody{
+        height: 675px;
+    }
+    
+}
 
+        /* Phone Version */
+        /* Min-Width=320px */
+
+@media screen and (min-width: 319px) and (max-width: 458px){
+    body #hamburger{
+        width: 40px;
+        height: 40px;
+    }
+    body .dropdown{
+        margin-right: 10px;
+        margin-top: 20px;
+        display: block;
+    }
+    body .dropdown-content{
+        font-size: 1em;
+        transform: translate(-50px, 40px);
+    }
+    body #visionaryholder{
+        height: 60px;
+        width: 150px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    body #logo{
+        height: 60px;
+        width: 60px;
+
+    }
+    body #visionarytitle{
+        transform: translate(47%, -50%);
+        /* font-size: 13pt; */
+        font-size: 1.1em;
+    }
+    body #visionaryholder:hover #logo{
+        /* left: 100%; */
+        transform: translateX(152%);
+    }
+    body #visionaryholder:hover #visionarytitle{
+        /* right: 100%; */
+        transform: translate(-7%, -50%);
+    }
+    body .herotitle{
+        /* font-size: 22pt; */
+        font-size: 2em;
+    }
+    body .herocaption{
+        /* font-size: 10pt; */
+        font-size: .9em;
+    }
+    body .aboutmeheader{
+        font-size: 2em;
+    }
+    body #aboutmetext{
+        font-size: 1em;
+    }
+    body #redirect{
+        width: fit-content;
+        padding-top: 25px;
+        font-size: .8em;
+        margin-right: 0;
+        max-width: 60%;
+    }
+    body .basiccta{
+        width: auto;
+        margin-right: 1%;
+        margin-left: 0;
+        padding: 1px;
+    }
+    body #websitelink{
+        padding-top: 12.5px;
+
+    }
+    body #resume{
+        /* float: left;
+        padding-left: 15%;
+        transform: translateY(160px);
+        font-size: 11pt;
+         */
+        display: none;
+    }
+    body #footerrefs{
+        width: auto;
+        /* float: left; */
+        margin-left: 24%;
+        transform: translateY(-20px);
+        
+    }
+    body .links{
+        margin-right: 5%;
+        display: inline-block;
+        
+    }
+    
+
+
+
+@media screen and (max-width: 319px){
+    *{display: none;}
+}
 }
 #hero{
-    background: url(../images/onetwo.png) no-repeat;
+    background: url(../images/onetwocomp.png) no-repeat;
                     /* url(../images/design2two.png)  0px 1000px no-repeat;                                                      ; */
     width: 100%;
     background-position: center;
@@ -197,7 +313,7 @@ a{
     background-position: 0 1000px;
 }
 #closer{
-    background: url(../images/bottombg4two.png) no-repeat;
+    background: url(../images/bottombg4twocomp.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: auto;
@@ -249,7 +365,8 @@ nav{
 #visionarytitle{
     float: right;
     position: absolute;
-    font-size: 15pt;
+    font-size: 1.3em;
+    /* font-size: 16pt; */
     color: rgba(255, 255, 255, 1);
     text-shadow: 1px 1px 0px  rgba(0, 0, 0, 1);
     top: 50%;
@@ -266,7 +383,7 @@ nav{
     /* margin: 32.5px 30px 0 0px; */
     /* transform: translateX(-30px);
     transform: translateY(32.5px); */
-    display: none;
+    /* display: none; */
     padding: 5px;
     background-color: rgba(0, 0, 0, .6);
     border-radius: 2px;
@@ -283,6 +400,7 @@ nav{
     margin: 27px 15px 0 0px;
     float: right;
     overflow: hidden;
+    display: none;
 }
 .dropdown:hover #hamburger{
     border-bottom-left-radius: 0;
@@ -301,7 +419,8 @@ nav{
     border-bottom-right-radius: 2px;
     border-top-left-radius: 2px;
     transform: translateX(-49px) translateY(55px) ;
-    font-size: 15pt;
+    font-size: 1.25em;
+    /* font-size: 15pt; */
     font-family: 'raleway';
     
   }
@@ -339,6 +458,7 @@ nav{
     text-decoration: none;
     color: rgba(220, 220, 220, 1);
     border-radius: 2px;
+    font-size: 1em;
 }
 .navcta:hover{
     background-color:  rgba(0, 0, 0, .8);
@@ -348,7 +468,8 @@ nav{
 .herotitle{
     font-family: 'lora','Arial Narrow Bold', sans-serif;
     font-weight: 1000;
-    font-size: 30pt;
+    /* font-size: 30pt; */
+    font-size: 2.5em;
     position: relative;
     margin: 0;
     text-shadow: 5px rgba(255, 255, 255, 1);
@@ -361,7 +482,8 @@ nav{
 
 .herocaption{
     font-family: 'ibm plex sans', sans-serif;
-    font-size: 11pt;
+    /* font-size: 11pt; */
+    font-size: 0.95em;
     max-width: 55%;
     margin: 5px;
     text-shadow: rgba(255, 255, 255, 1) 5px;
@@ -387,20 +509,20 @@ nav{
 #uxredirect{
     
     /* background-size: 90%; */
-    background-image: url(../images/uxsnapshot.jpg);
+    background-image: url(../images/uxsnapshotcomp.jpg);
     /* background-size: 75% auto;
     background-repeat: no-repeat;
     background-position-y: 225px;
     background-position-x: center; */
 }
 #graphicredirect{
-    background-image: url(../images/graphicsnapshot.jpg);
+    background-image: url(../images/graphicsnapshotcomp.jpg);
 }
 #webdevredirect{
-    background-image: url(../images/webdevsnapshot.jpg);
+    background-image: url(../images/webdevsnapshotcomp.jpg);
 }
 #expredirect{
-    background-image: url(../images/expsnapshot.jpg);
+    background-image: url(../images/expsnapshotcomp.jpg);
 }
 #projectsredirect{
     background-image: url(../images/projectssnapshot.jpg);
@@ -411,8 +533,9 @@ nav{
 .contentdesc{
     position: relative;
     margin: 45px 0 0 0;
-    padding: 5px;
-    font-size: 19pt;
+    padding: 5px 0 5px 0;
+    /* font-size: 19pt; */
+    font-size: 1.5em;
     background-color: rgba(0, 0, 0, .6);
     color: rgba(220, 220, 220, 1);
 }
@@ -420,12 +543,12 @@ nav{
     border-width: 7px;
     border-style: solid;
     border-color:  rgba(0, 0, 0, .8);
-    transition-duration: .33s;
 }
 .content:hover .contentdesc{
     color:  rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, .8);
-    font-size: 20pt;
+    /* font-size: 20pt; */
+    font-size: 1.6em;
 }
 
 .threeboxcolumn{
@@ -519,7 +642,8 @@ nav{
     margin-right: 2%;
     margin-top: 12.5px;
     padding: 35px;
-    font-size: 27pt;
+    /* font-size: 27pt; */
+    font-size: 2.35em;
     border-radius: 2px;
     color: rgba(220, 220, 220, 1);
 }
@@ -528,7 +652,8 @@ nav{
     height: 300px;
     padding: 10px 2% 10px 2%;
     background-color:rgba(220, 220, 220, .5); 
-    font-size: 18.5pt;
+    /* font-size: 18.5pt; */
+    font-size: 1.55em;
 }
 #aboutmebody{
     background-color:  rgba(220, 220, 220, .3);
@@ -540,7 +665,8 @@ nav{
     background-color: rgba(220, 220, 220, .3)
 }
 #redirect{
-    font-size: 14pt;
+    /* font-size: 14pt; */
+    font-size: 1.2em;
     max-width: 70%;
     margin-left: 2%;
     vertical-align: middle;
@@ -553,7 +679,7 @@ nav{
 .basiccta{
     vertical-align: middle;
     position: relative;
-    padding: 15px;
+    padding: 12px;
     font-weight: 600;
     width: 20%;
     height: 48.714px;
@@ -561,7 +687,8 @@ nav{
     margin-top: 18.5px;
     margin-right: 1%;
     font-family: 'raleway';
-    font-size: 14pt;
+    /* font-size: 14pt; */
+    font-size: 1.2em;
     background-color: rgba(0, 0, 0, .55);
     text-align: center;
     border-radius: 2px;
@@ -576,17 +703,7 @@ nav{
     margin: 100px 0 0 5%;
 
 }
-#contactheader{
-    text-align: center;
-    padding: 15px;
-    font-size: 22pt;
-    background-color: rgba(0, 0, 0, .6);
-    max-width: 20%;
-    margin: auto;
-    top: 8px;
-    position: relative;
-    color: rgba(220, 220, 220, 1);
-}
+
 #contactbody{
     height: 300px;
     background-color: rgba(255, 255, 255, .4);
@@ -603,12 +720,13 @@ nav{
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 5px;
-    font-size: 20pt;
+    /* font-size: 20pt; */
+    font-size: 1.6em;
     font-family: 'ibm plex sans';
 }
 
 .contactinput{
-    float: left;
+    float: right;
     background-color:  rgba(255, 255, 255, .2);
     top: 10px;
     position: relative;
@@ -616,13 +734,21 @@ nav{
     margin-right: 5%;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 88%;
+    width: 50%;
     height: 30px;
     padding: 20px;
-    font-size: 17pt;
+    /* font-size: 17pt; */
+    font-size: 1.55em;
 }
+/* #namespacer{
+    margin-right: 171px;
+}
+#messagespacer{
+    margin-right: 135px;
+    
+} */
 #contactinputlrg{
-    float: left;
+    float: right;
     background-color:  rgba(255, 255, 255, .2);
     top: 10px;
     position: relative;
@@ -630,7 +756,7 @@ nav{
     margin-right: 5%;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 88%;
+    width: 50%;
     height: 90px;
     padding: 20px;
     font-size: 17pt;
@@ -655,21 +781,24 @@ footer{
     margin-left: 25%;
     margin-top: 0px;
     margin-right: 4%;
-    font-size: 12pt;
+    /* font-size: 12pt; */
+    font-size: 1em;
+    line-height: 1.75em;
 }
 
 #footerrefs{
     float: left;
     width: 45%;
     height: 100px;
-    line-height: 1.5em;
+    line-height: 1.75em;
 
 }
 .links{
     float: left;
     margin-top: 0px;
     margin-right: 5%;
-    font-size: 12pt;
+    /* font-size: 12pt; */
+    font-size: 1em;
     font-family: Helvetica, sans-serif;
 }
 #workscited{
@@ -677,17 +806,25 @@ footer{
     position: relative;
     clear: left;
     text-align: center;
-    font-size: 8pt;
+    /* font-size: 8pt; */
+    font-size: .7em;
     font-style: italic;
     margin: auto;
 }
-#websitelink{
+/* #websitelink{
     margin-top: 15px;
-}
+    transform: translateY(145p);
+} */
 footer a:visited{
     color:#000;
 }
 footer a:hover{
     color:#0311FC;
     cursor: pointer;
+}
+.links:visited{
+    color: #000;
+}
+#sendbutton{
+    transform: translateY(-12.5px) translateX(-10px);
 }
