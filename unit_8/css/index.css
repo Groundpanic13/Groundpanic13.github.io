@@ -25,9 +25,15 @@ font-family: Helvetica, sans-serif;
 /* .lora{
 font-family: 'lora';
 } */
+
 *{margin: 0; padding: 0; box-sizing: border-box;}
+
 body{font-size: 16px;}
-a{
+
+body a{
+    text-decoration: none;
+}
+body a:hover{
     text-decoration: none;
 }
 .clearfix:after {
@@ -43,257 +49,6 @@ a{
     min-width: auto;    
 }
 
-    /* Tablet and Below Version */
-
-@media screen and (max-width: 830px){
-    body #image2{
-        clear: both;
-        background-size: cover;
-        background-position: center;
-        height: 4100px;
-        background-position: 0 1000px;
-    }
-    body #closer{
-        background-size: cover;
-        background-position: center;
-        height: auto;
-        background-position:  0px 4100px;
-    }
-    body .navcta{
-        display: none;
-    }
-    body .dropdown{
-        display: block;
-    }
-    body .threeboxcolumn{
-        height: auto;
-        /* background-color: lime; */
-    }
-    body .col1{
-        clear: both;
-        /* background-color: lightcoral; */
-        padding: 225px 0 0 0%;
-        width: 100%;
-    }
-    body .col2{
-        clear: both;
-        padding: 100px 0 0 0%;
-        width: 100%;
-    }
-    body .col3{
-        clear: both;
-        padding: 100px 0 0 0%;
-        width: 100%;
-    }
-    body .content{
-        height: 680px;
-    }
-    body .skillshead{
-        clear: both;
-        padding-top: 135px;
-        margin: auto;
-        text-align: center;
-    }
-    body .herotitle{
-        padding-bottom: 10px;
-    }
-    body .herocaption{
-        margin: auto;
-    }
-    body #exp{
-        clear: both;
-        padding: 100px 0 0 0%;
-        width: 100%;
-    }
-
-    body #projects{
-        clear: both;
-        padding: 100px 0 0 0%;
-        width: 100%;
-    }
-
-    body #cert{
-        clear: both;
-        padding: 100px 0 0 0%;
-        width: 100%;
-    }
-
-    body .aboutmebar{
-        height: 104.76px;
-    }
-    body .me{
-        height: 88.666px;
-        width: 88.666px;
-        margin-top: 5px;
-    }
-
-    body #aboutmetext{
-        /* font-size: 15pt; */
-        font-size: 1.3em;
-    }
-    body .aboutmeheader{
-        float: right;
-        background-color:rgba(0, 0, 0, .5);
-        position: relative;
-        margin-right: 2%;
-        margin-top: 2px;
-        padding: 20px;
-        /* font-size: 25pt; */
-        font-size: 2.2em;
-        border-radius: 2px;
-        color: rgba(220, 220, 220, 1);
-
-    }
-    body #redirect{
-        /* font-size: 12pt; */
-        font-size: 1.025em;
-    }
-    body #contactinputlrg{
-        margin-top: 50px;
-        height: 200px;
-    }
-    body #contactbody{
-        height: 450px;
-    }
-    body .basiccta{
-        margin-right: 2%;
-        /* padding-top: 5px; */
-        /* padding-right: 5px; */
-    }
-    body #websitelink{
-        /* background-color: khaki; */
-        transform: translateX(-10%);
-        /* padding-right: 20%; */
-    }
-
-    body #resume{
-        margin-left: 15%;
-        margin-top: 0px;
-        margin-right: 4%;
-        font-size: 12pt;
-    }
-    body #footerrefs{
-        max-width: 70%;
-    }
-    body .contactinput{
-        clear: both;
-        float: left;
-        width: 80%;
-        margin-left: 7%;
-    }
-    body #contactinputlrg{
-        clear: both;
-        float: left;
-        margin-left: 7%;
-        top: -20px;
-        width: 80%;
-    }
-    body #contactbody{
-        height: 675px;
-    }
-    
-}
-
-        /* Phone Version */
-        /* Min-Width=320px */
-
-@media screen and (min-width: 319px) and (max-width: 458px){
-    body #hamburger{
-        width: 40px;
-        height: 40px;
-    }
-    body .dropdown{
-        margin-right: 10px;
-        margin-top: 20px;
-        display: block;
-    }
-    body .dropdown-content{
-        font-size: 1em;
-        transform: translate(-50px, 40px);
-    }
-    body #visionaryholder{
-        height: 60px;
-        width: 150px;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-    body #logo{
-        height: 60px;
-        width: 60px;
-
-    }
-    body #visionarytitle{
-        transform: translate(47%, -50%);
-        /* font-size: 13pt; */
-        font-size: 1.1em;
-    }
-    body #visionaryholder:hover #logo{
-        /* left: 100%; */
-        transform: translateX(152%);
-    }
-    body #visionaryholder:hover #visionarytitle{
-        /* right: 100%; */
-        transform: translate(-7%, -50%);
-    }
-    body .herotitle{
-        /* font-size: 22pt; */
-        font-size: 2em;
-    }
-    body .herocaption{
-        /* font-size: 10pt; */
-        font-size: .9em;
-    }
-    body .aboutmeheader{
-        font-size: 2em;
-    }
-    body #aboutmetext{
-        font-size: 1em;
-    }
-    body #redirect{
-        width: fit-content;
-        padding-top: 25px;
-        font-size: .8em;
-        margin-right: 0;
-        max-width: 60%;
-    }
-    body .basiccta{
-        width: auto;
-        margin-right: 1%;
-        margin-left: 0;
-        padding: 1px;
-    }
-    body #websitelink{
-        padding-top: 12.5px;
-
-    }
-    body #resume{
-        /* float: left;
-        padding-left: 15%;
-        transform: translateY(160px);
-        font-size: 11pt;
-         */
-        display: none;
-    }
-    body #footerrefs{
-        width: auto;
-        /* float: left; */
-        margin-left: 24%;
-        transform: translateY(-20px);
-        
-    }
-    body .links{
-        margin-right: 5%;
-        display: inline-block;
-        
-    }
-    
-
-
-
-@media screen and (max-width: 319px){
-    *{display: none;}
-}
-}
 #hero{
     background: url(../images/onetwocomp.png) no-repeat;
                     /* url(../images/design2two.png)  0px 1000px no-repeat;                                                      ; */
@@ -365,7 +120,7 @@ nav{
 #visionarytitle{
     float: right;
     position: absolute;
-    font-size: 1.3em;
+    font-size: 1.5em;
     /* font-size: 16pt; */
     color: rgba(255, 255, 255, 1);
     text-shadow: 1px 1px 0px  rgba(0, 0, 0, 1);
@@ -380,21 +135,14 @@ nav{
     height: 55px;
     width: 55px;
     color:rgba(220, 220, 220, 1);
-    /* margin: 32.5px 30px 0 0px; */
-    /* transform: translateX(-30px);
-    transform: translateY(32.5px); */
-    /* display: none; */
     padding: 5px;
     background-color: rgba(0, 0, 0, .6);
     border-radius: 2px;
-    /* background-size: 100px 100px; */
 }
 #hamburger:hover{
     color:rgba(245, 245, 245, 1);
     transition-duration: .33s;
     background-color: rgba(0, 0, 0, .8) ;
-    /* border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0; */
 }
 .dropdown {
     margin: 27px 15px 0 0px;
@@ -408,7 +156,6 @@ nav{
 
 }
 .dropdown-content {
-    display: none;
     position: absolute;
     background-color: rgba(0, 0, 0, .6);
     /* min-width: 160px; */
@@ -428,7 +175,6 @@ nav{
     float: none;
     color:rgba(220, 220, 220, 1);
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
     text-align: left;
     border-radius: 2px;
@@ -446,19 +192,21 @@ nav{
 
   
 .navcta{
-    font-family: 'raleway', Verdana, sans-serif;
-    vertical-align: middle;
-    text-align: center;
+    font-family: 'Raleway', Verdana, sans-serif;
+    /* vertical-align: middle;
+    text-align: center; */
     float: right;
     background-color: rgba(0, 0, 0, .6);
     position: relative;
     margin: 25px 24px 0 12px;
-    padding: 15px;
-    font-weight: 600;
+    /* padding: 5px; */
+    padding: 10px 10px 0px 10px;
+
+    font-weight: 400;
     text-decoration: none;
     color: rgba(220, 220, 220, 1);
     border-radius: 2px;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 .navcta:hover{
     background-color:  rgba(0, 0, 0, .8);
@@ -776,6 +524,9 @@ footer{
     height: 200px;
     width: auto;
 }
+footer a{
+    color: black;
+}
 #resume{
     float: left;
     margin-left: 25%;
@@ -811,10 +562,6 @@ footer{
     font-style: italic;
     margin: auto;
 }
-/* #websitelink{
-    margin-top: 15px;
-    transform: translateY(145p);
-} */
 footer a:visited{
     color:#000;
 }
@@ -825,6 +572,254 @@ footer a:hover{
 .links:visited{
     color: #000;
 }
-#sendbutton{
-    transform: translateY(-12.5px) translateX(-10px);
+@media screen and (max-width: 830px){
+     #image2{
+        clear: both;
+        background-size: cover;
+        background-position: center;
+        height: 4100px;
+        background-position: 0 1000px;
+    }
+     #closer{
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        background-position:  0px 4100px;
+    }
+     .navcta{
+        display: none;
+    }
+     .dropdown{
+        display: block ;
+        /* overflow: auto; */
+    }
+    /* body .dropdown *{
+        display: block;
+    } */
+     .threeboxcolumn{
+        height: auto;
+        /* background-color: lime; */
+    }
+     .col1{
+        clear: both;
+        /* background-color: lightcoral; */
+        padding: 225px 0 0 0%;
+        width: 100%;
+    }
+     .col2{
+        clear: both;
+        padding: 100px 0 0 0%;
+        width: 100%;
+    }
+     .col3{
+        clear: both;
+        padding: 100px 0 0 0%;
+        width: 100%;
+    }
+     .content{
+        height: 680px;
+    }
+     .skillshead{
+        clear: both;
+        padding-top: 135px;
+        margin: auto;
+        text-align: center;
+    }
+     .herotitle{
+        padding-bottom: 10px;
+    }
+     .herocaption{
+        margin: auto;
+    }
+     #exp{
+        clear: both;
+        padding: 100px 0 0 0%;
+        width: 100%;
+    }
+
+     #projects{
+        clear: both;
+        padding: 100px 0 0 0%;
+        width: 100%;
+    }
+
+     #cert{
+        clear: both;
+        padding: 100px 0 0 0%;
+        width: 100%;
+    }
+
+     .aboutmebar{
+        height: 104.76px;
+    }
+     .me{
+        height: 88.666px;
+        width: 88.666px;
+        margin-top: 5px;
+    }
+
+     #aboutmetext{
+        /* font-size: 15pt; */
+        font-size: 1.3em;
+    }
+     .aboutmeheader{
+        float: right;
+        background-color:rgba(0, 0, 0, .5);
+        position: relative;
+        margin-right: 2%;
+        margin-top: 2px;
+        padding: 20px;
+        /* font-size: 25pt; */
+        font-size: 2.2em;
+        border-radius: 2px;
+        color: rgba(220, 220, 220, 1);
+
+    }
+     #redirect{
+        /* font-size: 12pt; */
+        font-size: 1.025em;
+    }
+     #contactinputlrg{
+        margin-top: 50px;
+        height: 200px;
+    }
+     #contactbody{
+        height: 450px;
+    }
+     .basiccta{
+        margin-right: 2%;
+        /* padding-top: 5px; */
+        /* padding-right: 5px; */
+    }
+     #websitelink{
+        /* background-color: khaki; */
+        transform: translateX(-10%);
+        /* padding-right: 20%; */
+    }
+
+     #resume{
+        margin-left: 15%;
+        margin-top: 0px;
+        margin-right: 4%;
+        font-size: 12pt;
+    }
+     #footerrefs{
+        max-width: 70%;
+    }
+     .contactinput{
+        clear: both;
+        float: left;
+        width: 80%;
+        margin-left: 7%;
+    }
+     #contactinputlrg{
+        clear: both;
+        float: left;
+        margin-left: 7%;
+        top: -20px;
+        width: 80%;
+    }
+     #contactbody{
+        height: 675px;
+    }
+    #sendbutton{
+        transform: translateY(-12.5px) translateX(-10px);
+    }
+}
+
+        /* Phone Version */
+        /* Min-Width=320px */
+
+@media screen and (max-width: 458px){
+     #hamburger{
+        width: 40px;
+        height: 40px;
+    }
+     .dropdown{
+        margin-right: 10px;
+        margin-top: 20px;
+        display: block;
+    }
+     .dropdown-content{
+        font-size: 1em;
+        transform: translate(-50px, 40px);
+    }
+     #visionaryholder{
+        height: 60px;
+        width: 150px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+     #logo{
+        height: 60px;
+        width: 60px;
+
+    }
+     #visionarytitle{
+        transform: translate(47%, -50%);
+        /* font-size: 13pt; */
+        font-size: 1.1em;
+    }
+     #visionaryholder:hover #logo{
+        /* left: 100%; */
+        transform: translateX(152%);
+    }
+     #visionaryholder:hover #visionarytitle{
+        /* right: 100%; */
+        transform: translate(-7%, -50%);
+    }
+     .herotitle{
+        /* font-size: 22pt; */
+        font-size: 2em;
+    }
+     .herocaption{
+        /* font-size: 10pt; */
+        font-size: .9em;
+    }
+     .aboutmeheader{
+        font-size: 2em;
+    }
+     #aboutmetext{
+        font-size: 1em;
+    }
+     #redirect{
+        width: fit-content;
+        padding-top: 25px;
+        font-size: .8em;
+        margin-right: 0;
+        max-width: 60%;
+    }
+     .basiccta{
+        width: auto;
+        margin-right: 1%;
+        margin-left: 0;
+        padding: 1px;
+    }
+     #websitelink{
+        padding-top: 12.5px;
+
+    }
+     #resume{
+        /* float: left;
+        padding-left: 15%;
+        transform: translateY(160px);
+        font-size: 11pt;
+         */
+        display: none;
+    }
+     #footerrefs{
+        width: auto;
+        /* float: left; */
+        margin-left: 24%;
+        transform: translateY(-20px);
+        
+    }
+     .links{
+        margin-right: 5%;
+        display: inline-block;
+        
+    }
+}
+@media screen and (max-width: 319px){
+    *{display: initial;}
 }
