@@ -1,52 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visionary</title>
+    <title>SunriseArc</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/c86835b558.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="flex">
-    
+    <header>
+        <a id="visionaryholder" href="index.html">
+            <img src="images/idea.jpg" alt="logo" id="logo">
+            <p id="visionarytitle" class="rale">SunriseArc</p>
+        </a>
+    <nav>
+
+        <a id="contactcta" class="navcta clearfix floatright" >
+            <p>Contact</p>
+        </a>
+
+        <a id="aboutmecta" class="navcta clearfix floatright">
+            <p>About Me</p>
+       </a>
+
+        <a id="webdesigncta" class="navcta clearfix floatright" href="certification.html">
+            <p>Certification</p>
+        </a>
+
+        <a id="skillslink" class="navcta clearfix floatright" href="skills.html">
+            <p>Skills</p>
+        </a>
+
+        <a id="certlink" class="navcta clearfix floatright" href="webdesign.html">
+            <p>Web Design</p>
+        </a>
+        
+        <div class="dropdown">
+            <a id="hamburg" class="dropbtn">
+                <p><i class="fas fa-bars" id="caret"></i></p>
+            </a>
+        <div class="dropdown-content">
+            <a id="contact">Contact</a>
+            <a id="aboutme">About Me</a>
+            <a id="" href="webdesign.html">Web Design</a>
+            <a id="" href="skills.html">Skills</a>
+            <a id="" href="certification.html">Certification</a>
+        </div>
+    </div>
+                        
+                 
+
+    </nav>
+</header>
     <div id="wrapper" class="clearfix">
 
    
-    <header>
-            <section id="visionaryholder">
-                <img src="images/idea.jpg" alt="logo" id="logo">
-                <p id="visionarytitle" class="rale">Visionary</p>
-            </section>
-        <nav>
-            <div class="dropdown">
-        
-                <a class="dropbtn">  
-                    <i class="fas fa-bars" id="hamburger"></i>
-                </a>
-                <div class="dropdown-content">
-                    <a id="about">About</a>
-                    <a id="contact">Contact</a>
-                </div>
-
-            </div>
-
-
-            <a id="contactcta" class="navcta clearfix floatright" >
-                <p>Contact</p>
-            </a>
-            <a id="aboutmecta" class="navcta clearfix floatright">
-                 <p>About Me</p>
-            </a>
-        </nav>
-    </header>
+    
     
         <main>
             <section class="skillshead">
-                <h2 class="herotitle">What is Visionary?</h2>
-                <p  class="herocaption ibm">Visionary is a freelance web development service incorporating reliable and industry-standard elements to create beautiful designs.</p>
+                <h2 class="herotitle">What is SunriseArc?</h2>
+                <p  class="herocaption ibm">SunriseArc is a freelance web development service incorporating reliable and industry-standard elements to create beautiful designs.</p>
             </section>
 
             <a id="primarycta" class="navcta clearfix floatleft" >
@@ -54,12 +72,8 @@
             </a>
 
             <section class="contentcontainer">
-                <a href="webdesign.html" class="content" id="uxredirect">
+                <a href="webdesign.html" class="contentfirst" id="uxredirect">
                     <p class="contentdesc">Web Design</p>
-                </a>
-
-                <a href="visualdesign.html" class="content contentdown" id="graphicredirect">
-                    <p class="contentdesc">Visual Design</p>
                 </a>
             </section>
 
@@ -67,17 +81,17 @@
             
 
             <section class="whyhead">
-                <h2 class="herotitle">Why should you trust Visionary?</h2>
-                <p  class="herocaption ibm">Visionary is a combination of creative-thinking, great design, and hard work. Don't just take my word for it, see below to check for yourself. </p>
+                <h2 class="herotitle">Why should you trust SunriseArc?</h2>
+                <p  class="herocaption ibm">SunriseArc is a combination of creative-thinking, great design, and hard work. Don't just take my word for it, see below to check for yourself. </p>
             </section>
 
            
-            <section class="contentcontainer">
-                <a href="certifications.html" class="content contentdown" id="certificationsredirect">
-                    <p class="contentdesc">Certifications</p>
+            <section class="contentcontainer2">
+                <a href="certification.html" class="content" id="certificationsredirect">
+                    <p class="contentdesc">Certification</p>
                 </a>
 
-                <a href="webdevelopment.html" class="content" id="webdevredirect">
+                <a href="skills.html" class="content" id="webdevredirect">
                     <p class="contentdesc">Skills</p>
                 </a>
             </section>
@@ -95,7 +109,8 @@
                 </div>
                 <div class="contentbar">
                     <label id="redirect">Feel free to check out my personal site.</label>
-                    <a class="basiccta" id="websitelink" href="https://flynncondit.com">Website</a>
+                    <label id="redirect2">Personal Website</label>
+                    <a class="basiccta" id="websitelink" href="https://flynncondit.com">flynncondit.com</a>
                 </div>
             </section>
 
@@ -142,21 +157,17 @@
             </section>
 
         </main>
-        
+
+        <a id="topchev">
+            <i class="fas fa-chevron-circle-up" id="topchevron"></i>
+            <p id="pagecloser">Back to Top</p>
+        </a>
+    </div>
+
         <footer>
-          <p id="resume" class="hel"><a href="https://www.linkedin.com/in/flynn-condit-0986511b0/">Linkedin Resume</a></p>  
-            <div id="footerrefs" class="hel">
-                <p class="links clearfix" id="home"><a><b>Home</b></a></p>
-                <p class="links clearfix"><a href="ux.html">User Experience</a></p>
-                <p class="links clearfix"><a href="graphicdesign.html">Graphic Design</a></p>
-                <p class="links clearfix"><a href="webdevelopment.html">Web Development</a></p>
-                <p class="links clearfix"><a href="certifications.html">Certifications</a></p>
-                <p class="links clearfix"><a href="projects.html">Projects</a></p>
-                <p class="links clearfix"><a href="workexperience.html">Work Experience</a></p>
-            </div>
             <p id="workscited" class="hel">Created with HTML5, CSS3, PHP, Google reCaptcha v3, all rights reseved.</p>
         </footer>
-    </div>
+    
 
 </div> 
 
@@ -169,6 +180,12 @@ $([document.documentElement, document.body]).animate({
 });
 
     $("#aboutmecta").click(function() {
+$([document.documentElement, document.body]).animate({
+    scrollTop: $("#aboutmebox").offset().top
+}, 2000);
+});
+
+$("#aboutme").click(function() {
 $([document.documentElement, document.body]).animate({
     scrollTop: $("#aboutmebox").offset().top
 }, 2000);
@@ -190,11 +207,10 @@ $([document.documentElement, document.body]).animate({
     scrollTop: $("#aboutmebox").offset().top
 }, 2000);
 });
-
-$("#home").click(function() {
-$([document.documentElement, document.body]).animate({
-    scrollTop: $("#flex").offset().top
-}, 2000);
+$("#topchev").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#flex").offset().top
+    }, 2250);
 });
 
 /*box and dots*/

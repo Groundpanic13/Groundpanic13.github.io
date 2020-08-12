@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Graphic Design</title>
-    <link rel="stylesheet" href="css/graphicdesign.css">
+    <title>Visual Design</title>
+    <link rel="stylesheet" href="css/visualdesign.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/c86835b558.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -16,15 +16,58 @@
 <body>
     <div id="flex">
         <nav>
-            <section id="visionaryholder">
+            <a id="visionaryholder" href="index.html">
                 <img src="images/idea.jpg" alt="logo" id="logo">
                 <p id="visionarytitle" class="rale">Visionary</p>
-            </section>
-            <a href="index.html" class="navcta floatright" >Home</a>
-            <a href="index.html" class="navcta floatright">Contact</a>
+            </a>
+            <div class="dropdown">
+    
+                <!-- <a class="dropbtn">  -->
+                    <a id="" class="navcta clearfix floatright">
+                        <p>Abilities <i class="fas fa-chevron-down"></i></p>
+                    </a>
+                <!-- </a> -->
+                <div class="dropdown-content2">
+                    <a id="about" href="skills.html">Skills</a>
+                    <a id="contact" href="certification.html">Certification</a>
+                </div>
+    
+            </div>
+    
+            <div class="dropdown">
+        
+                <!-- <a class="dropbtn">  -->
+                    <a id="" class="navcta clearfix floatright dropbtn">
+                        <p>Services <i class="fas fa-chevron-down"></i></p>
+                    </a>
+                <!-- </a> -->
+                <div class="dropdown-content">
+                    <a id="about" href="webdesign.html">Web Design</a>
+                    <a id="contact" href="visualdesign.html">Visual Design</a>
+                </div>
+    
+            </div>
+    
+            <a id="contactcta" class="navcta clearfix floatright" >
+                <p>Contact</p>
+            </a>
+            
         </nav>
         <div id="wrapper">
-            <h1 class="header" id="whyhead">Why is Graphic Design important?</h1>
+            <h1 class="header" id="whyhead">What is Visual Design?</h1>
+            <div id="impactbox2">
+                <div id="whatvd">
+                    <div class="image2" id="interaction"></div>
+                    <h3 class="whatvdsubhead">Interface Design & Accesibility</h3>
+                    <p class="imagep1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, quis. Pariatur harum accusamus quos! Esse ullam totam ipsa beatae deleniti consectetur sit dolorum, laborum sed, perspiciatis perferendis fuga minus aliquam.</p>
+                </div>
+                <div id="whatvd">
+                    <div class="image2" id="gd"></div>
+                    <h3 class="whatvdsubhead">Graphic Design</h3>
+                    <p class="imagep1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, quis. Pariatur harum accusamus quos! Esse ullam totam ipsa beatae deleniti consectetur sit dolorum, laborum sed, perspiciatis perferendis fuga minus aliquam.</p>
+                </div>
+            </div>
+            <h1 class="header" id="whyhead">Why is Visual Design important?</h1>
             <div id="impactbox">
                 <div id="subbox">
                     <p id="impactintro">It leaves an</p>
@@ -56,8 +99,12 @@
                     <h3 class="whyuxsubhead">Eye-Catching Layouts</h3>
                     <p class="imagep">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, quis. Pariatur harum accusamus quos! Esse ullam totam ipsa beatae deleniti consectetur sit dolorum, laborum sed, perspiciatis perferendis fuga minus aliquam.</p>
                 </div>
+                <div class="imagedesc floatright" id="logos">
+                    <div class="image" id="logodesign"></div>
+                    <h3 class="whyuxsubhead">Beautiful Logos</h3>
+                    <p class="imagep">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, quis. Pariatur harum accusamus quos! Esse ullam totam ipsa beatae deleniti consectetur sit dolorum, laborum sed, perspiciatis perferendis fuga minus aliquam.</p>
+                </div>
             </div>
-
 
 
 
@@ -65,18 +112,16 @@
 
 
             <div id="buttons">
-                <a href="ux.html" class="nextbutton" id="prev"><i class="fas fa-chevron-left"></i>&nbsp;  Back</a>
-                <a href="webdevelopment.html" class="nextbutton" id="">Next &nbsp;<i class="fas fa-chevron-right"></i></a>
+                <a href="webdesign.html" class="nextbutton" id="back"><i class="fas fa-chevron-left"></i>  Back</a>
+                <a href="skills.html" class="nextbutton" id="next">Next <i class="fas fa-chevron-right"></i></a>
             </div>
             <div id="bottomnavdots">
-                <a href="ux.html"><i class="fas fa-dot-circle"></i></a>
-                <a href="graphicdesign.html"><i class="far fa-dot-circle"></i></a>
-                <a href="webdevelopment.html"><i class="far fa-dot-circle"></i></a>
-                <a href="workexperience.html"><i class="far fa-dot-circle"></i></a>
-                <a href="projects.html"><i class="far fa-dot-circle"></i></a>
-                <a href="certifications.html"><i class="far fa-dot-circle"></i></a>
+                <a href="webdesign.html" class="navdot"><i class="far fa-dot-circle"></i></a>
+                <a href="visualdesign.html" class="navdot"><i class="fas fa-dot-circle"></i></a>
+                <a href="skills.html" class="navdot"><i class="far fa-dot-circle"></i></a>
+                <a href="certification.html"class="navdot" ><i class="far fa-dot-circle"></i></a>
             </div>
-            <p id="bottomnavdotsindicator">1 of 6</p>
+            <p id="bottomnavdotsindicator">2 of 4</p>
         </div>
         <footer>
             <a href="index.html" class="navcta floatleft" >Home</a>

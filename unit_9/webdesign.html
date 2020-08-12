@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>User Experience</title>
-    <link rel="stylesheet" href="css/ux.css">
+    <title>Web Design - SunriseArc</title>
+    <link rel="stylesheet" href="css/webdesign.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/c86835b558.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -16,81 +16,146 @@
 <body>
     <div id="flex">
         <nav>
-            <section id="visionaryholder">
+            <a id="visionaryholder" href="index.html">
                 <img src="images/idea.jpg" alt="logo" id="logo">
-                <p id="visionarytitle" class="rale">Visionary</p>
-            </section>
-            <a href="index.html" class="navcta floatright" >Home</a>
-            <a href="index.html" class="navcta floatright">Contact</a>
+                <p id="visionarytitle" class="rale">SunriseArc</p>
+            </a>
+            
+            <!-- <div class="dropdown">
+                    <a id="" class="navcta clearfix floatright">
+                        <p>Abilities <i class="fas fa-chevron-down"></i></p>
+                    </a>
+                <div class="dropdown-content2">
+                    <a id="about" href="skills.html">Skills</a>
+                    <a id="contact" href="certification.html">Certification</a>
+                </div>
+    
+            </div> -->
+    
+            <div class="dropdown">
+                    <a id="hamburg" class="dropbtn">
+                        <p><i class="fas fa-bars" id="caret"></i></p>
+                    </a>
+                <div class="dropdown-content">
+                    <a id="about" href="index.html">Contact</a>
+                    <a id="contact" href="webdesign.html">Web Design</a>
+                    <a id="contact" href="skills.html">Skills</a>
+                    <a id="contact" href="certification.html">Certification</a>
+                </div>
+            </div>
+    
+            <a id="contactcta" class="navcta clearfix floatright" href="index.html">
+                <p>Contact</p>
+            </a>
+
+            <a id="cert" class="navctasec clearfix floatright" href="certification.html">
+                <p>Certification</p>
+            </a>
+
+            <a id="skills" class="navctasec clearfix floatright" href="skills.html">
+                <p>Skills</p>
+            </a>
+
+            <a id="webdesign" class="navctasec clearfix floatright current" href="webdesign.html">
+                <p>Web Design</p>
+            </a>
+
+            
         </nav>
+        
+        <!-- <div id="pagebuttonholder">
+            <a class="pagenavdesc current" href="webdesign.html" ><p class="navtext">Web Design</p></a>
+            <a class="pagenavdesc" href="skills.html" ><p class="navtext">Skills</p></a>
+            <a class="pagenavdesc" href="certification.html"><p class="navtext">Certification</p></a>
+        </div> -->
+
         <div id="wrapper">
-            <h1 class="header" id="whyhead">Why is User Experence important?</h1>
+            
+            <h1 class="header" id="whyhead">What is Web Design?</h1>
             <div id="whyuxcontainer">
                 <div class="imagedesc">
-                    <div class="image" id=""></div>
-                    <h3 class="whyuxsubhead">Reason One</h3>
-                    <p class="imagep">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium numquam quisquam amet quas natus ducimus! Dolor iusto inventore ipsam consequatur, similique harum. Inventore id expedita sed voluptate natus, obcaecati facilis?</p>
+                    <div class="image" id="codeplugins"></div>
+                    <h3 class="whyuxsubhead">Code & Plugins</h3>
+                    <p class="imagep">SunriseArc uses HTML, CSS, and Javascript to craft its pages, with plugins to assist that code where needed.</p>
                 </div>
                 <div class="imagedesc">
-                    <div class="image" id=""></div>
-                    <h3 class="whyuxsubhead">Reason Two</h3>
-                    <p class="imagep">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis, molestiae laudantium quasi doloremque id praesentium, maxime modi ducimus esse ea dicta expedita voluptatum dolores magnam quae, quibusdam consequatur delectus.</p>
+                    <div class="image" id="techanalysis"></div>
+                    <h3 class="whyuxsubhead">Tech Analysis</h3>
+                    <p class="imagep">We monitor the security, performance, and traffic of websites in order to optimize user experience and to protect the websites from online threats using industry-leading tools. </p>
                 </div>
                 <div class="imagedesc">
-                    <div class="image" id=""></div>
-                    <h3 class="whyuxsubhead">Reason Three</h3>
-                    <p class="imagep">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, quis. Pariatur harum accusamus quos! Esse ullam totam ipsa beatae deleniti consectetur sit dolorum, laborum sed, perspiciatis perferendis fuga minus aliquam.</p>
+                    <div class="image" id="progress"></div>
+                    <h3 class="whyuxsubhead">Web Marketing Optimization</h3>
+                    <p class="imagep">SunriseArc optimizizes its pages for users through search engine optimization (SEO), user feedback, and design choices that prioritise the website's desired action in order to gain more engaged users on a page that can translate into real dollars earned or achieving the goals of the page. </p>
                 </div>
             </div>
 
+            <div id="impactbox2">
+                <div id="whatvd">
+                    <div class="image3" id="interaction"></div>
+                    <h3 class="whatvdsubhead">Interface Design & Accesibility</h3>
+                    <p class="imagep1">We takes pride in creating interfaces that are easy to read on any device, and that are beautiful as well as functional. SunriseArc takes accesibility very seriously, and understands the value of readable fonts, sizing, ease of access, and code semantics for disabled visitors.</p>
+                </div>
+                <div id="whatvd">
+                    <div class="image3" id="gd"></div>
+                    <h3 class="whatvdsubhead">Graphic Design</h3>
+                    <p class="imagep1">We are skilled at creating designs that are adaptive to the feel and mood of each individual website, and introduce creative displays that empower users.</p>
+                </div>
+            </div>
+
+            <h3 class="whysubhead">Why is Web Design Important?</h3>
+            <div class="image2" id="whywebdesign"></div>
             <p id="whyuxcloser">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum commodi placeat ratione maxime totam provident veritatis? Sint laborum eius quidem provident odio nulla vel perferendis, sit mollitia aut labore rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vitae ab iusto in nam molestiae iure pariatur tenetur natus. Laboriosam commodi placeat temporibus aspernatur ducimus enim qui eveniet nobis odit.
+                A welcoming and enticing website is one of the most fundamental steps in any business across the globe.
+                This is true because is important because web design is primarily about people. A website is a powerful tool that connects producers with consumers like no other, a website is the front you show an audience that may have never met you, or if they have, it needs to confirm that your services/products are valuable.
             </p>
-            <h2 class="header" id="howhead">How Does Visionary Create Designs?</h2>
+
+            <h2 class="header" id="howhead">How Does SunriseArc Create Designs?</h2>
             <div class="imagedeschor">
                 <div class="attachedimage floatleft" id="tested"></div>
                 <div class="imagephor floatleft">
                     <h3 class="howsubhead">Industry-Tested Standards</h3>
-                    <p class="howp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium eaque in amet, pariatur aliquid quibusdam, facere placeat aliquam minus nemo ut voluptatibus asperiores similique quam, architecto totam aperiam voluptatem.</p>
+                    <p class="howp">SunriseArc is no stranger to embracing existing techniques. While innovation is excellent, there is no replacement for features and standards that have been a winning formula for years, and SunriseArc implements these standards in every design.</p>
                 </div>
             </div>
             <div class="imagedeschor">
                 <div class="attachedimage floatright" id="user"></div>
                 <div class="imagephor floatright">
                     <h3 class="howsubhead">User-Focused Design</h3>
-                    <p class="howp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum quia doloribus sapiente, aliquid recusandae eius possimus consequatur accusantium laborum laudantium aperiam at maiores. Temporibus necessitatibus ad illum odit perspiciatis.</p>
+                    <p class="howp">SunriseArc is familiar with user experience (UX) principles that guide visitors through websites with ease. We use analytics to rework content and reframe how content is prioritized with consideration to target audiences and device specifications.</p>
                 </div>
             </div>
             <div class="imagedeschor">
                 <div class="attachedimage floatleft" id="product"></div>
                 <div class="imagephor floatleft">
                     <h3 class="howsubhead">Product-Oriented Sites</h3>
-                    <p class="howp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet commodi autem aperiam nam reiciendis repellat sapiente, tempora adipisci, blanditiis libero voluptatem quidem dolores nemo sequi quia sit, omnis architecto?</p>
+                    <p class="howp">The reason websites exist is to get visitors to perform an action. It could be to buy a product, to contact an artist about their work, or to even read a recipe. Whatever the goal, SunriseArc is familiar with guiding users to accomplish it.</p>
                 </div>
             </div>
-            <a href="graphicdesign.html" id="nextbutton">Next <i class="fas fa-chevron-right"></i></a>
-            <div id="bottomnavdots">
-                <a href="ux.html"><i class="fas fa-dot-circle"></i></a>
-                <a href="graphicdesign.html"><i class="far fa-dot-circle"></i></a>
-                <a href="webdevelopment.html"><i class="far fa-dot-circle"></i></a>
-                <a href="workexperience.html"><i class="far fa-dot-circle"></i></a>
-                <a href="projects.html"><i class="far fa-dot-circle"></i></a>
-                <a href="certifications.html"><i class="far fa-dot-circle"></i></a>
-            </div>
-            <p id="bottomnavdotsindicator">1 of 6</p>
+    
+
+
+
+            <a id="topchev">
+                <i class="fas fa-chevron-circle-up" id="topchevron"></i>
+                <p id="pagecloser">Back to Top</p>
+            </a>
+
+
+
+
         </div>
         <footer>
-            <a href="index.html" class="navcta floatleft" >Home</a>
-            <a href="index.html" class="navcta floatleft" id="contactcta">Contact</a>
-            <a class="navcta floatright" id="backtotop">Back to Top <i class="fas fa-chevron-up"></i></a>
+           
         </footer>
     </div>
     <script>
-        $("#backtotop").click(function() {
+        $("#topchev").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#flex").offset().top
-    }, 2000);
+    }, 2250);
 });
+
     </script>
 </body>
 </html>
