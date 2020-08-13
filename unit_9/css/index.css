@@ -47,10 +47,10 @@ body a:hover{
 #flex{
     height: auto;
     min-width: auto;    
-    background-image: url(../images/webbuild.svg), url(../images/stripes.jpg);
-    background-position:  80% 100px, right top;
-    background-size: 34vw 650px, 100% 100%;
-    background-repeat: no-repeat, repeat;
+    background-image: url(../images/stripes.jpg);
+    background-position: right top;
+    background-size: 100% 100%;
+    background-repeat: repeat;
 }
 
 #wrapper{
@@ -62,12 +62,12 @@ body a:hover{
 nav{
     width: auto;
     height: 100px;
-    background-color: rgba(0, 0, 0, .05);
+    background-color: rgba(0, 0, 0, .025);
 }
 #visionaryholder{
     height: 75px;
     width: 200px;
-    margin: 15px 0 0 24px;
+    margin: 12.5px 0 0 24px;
     float: left;
     /* background-color: rgba(0, 0, 0, .6); */
     border-radius: 75px;
@@ -194,23 +194,32 @@ nav{
     /* vertical-align: middle;
     text-align: center; */
 
-    background-color: rgba(0, 0, 0, .6);
+    /* background-color: rgba(0, 0, 0, .6); */
     position: relative;
-    margin: 25px 24px 0 12px;
+    margin: 24px 24px 0 12px;
     /* padding: 5px; */
-    padding: 10px 10px 0px 10px;
+    padding: .5em 1em .5em 1em;
 
     font-weight: 400;
     text-decoration: none;
-    color: rgba(220, 220, 220, 1);
+    color: rgba(0  , 0, 0, 1);
     border-radius: 2px;
     font-size: 1.5em;
 }
 .navcta:hover{
-    background-color:  rgba(0, 0, 0, .8);
-    color:  rgba(255, 255, 255, 1);
+    background-color:  rgba(0, 0, 0, .025);
+    color:  rgba(0, 0, 0, 1);
     cursor: pointer;
 }
+#contactcta{
+    background-color: rgba(0, 0, 0, .6);
+    color: rgba(220, 220, 220, 1);
+}
+#contactcta:hover{
+    background-color: rgba(0, 0, 0, .8);
+    color: rgba(255, 255, 255, 1);
+}
+
 
 .floatleft{
     float: left;
@@ -219,10 +228,16 @@ nav{
     float: right;
 }
 #primarycta{
-    clear: both;
-    margin-bottom: 150px;
-    margin-left: 2%;
-    transform: translateY(-10px);
+    font-size: 1.5em;
+    float: left;
+    background-color: rgba(0, 0, 0, .6);
+    color: rgba(220, 220, 220, 1);
+    padding: .5em 1em .5em 1em;
+}
+#primarycta:hover{
+    background-color: rgba(0, 0, 0, .8);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
 }
 .herotitle{
     font-family: 'lora','Arial Narrow Bold', sans-serif;
@@ -234,16 +249,40 @@ nav{
     text-shadow: 5px rgba(255, 255, 255, 1);
     width: fit-content;
 }
-
+#secondaryheader{
+    font-family: 'lora','Arial Narrow Bold', sans-serif;
+    font-weight: 1000;
+    /* font-size: 30pt; */
+    font-size: 3em;
+    position: relative;
+    margin: 0;
+    text-shadow: 5px rgba(255, 255, 255, 1);
+    width: fit-content;
+}
+#hero{
+    margin-top: 50px;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+}
 .skillshead{
     float: left;
-    margin: 200px 25% 0% 2%;
+    margin: 100px 0% 0% 0;
     width: 50%;
+}
+#heroimage{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/webbuild.svg);
+    background-position: center;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
 }
 .whyhead{
     float: left;
-    margin: 0px 10% 150px 10%;
-    width: 80%;
+    margin: 0px 20% 150px 20%;
+    width: 60%;
 }
 
 .herocaption{
@@ -276,10 +315,10 @@ nav{
     float: left;
     position: relative;
     font-family: 'raleway';
-    width: 70%;
-    height: 500px;
+    width: 45%;
+    height: 450px;
     /* background-color: rgba(220, 220, 220, 1); */
-    margin: 75px 15% 0 15%;
+    margin: 75px 27.5% 0 27.5%;
     background-color: white;
     display: block;
     color: black;
@@ -310,7 +349,7 @@ nav{
 }
 .contentcontainer{
     clear: both;
-    height: 750px;
+    height: 650px;
     width: auto;
 }
 .contentcontainer2{
@@ -518,7 +557,7 @@ nav{
 }
 
 #contactbody{
-    height: 320px;
+    /* height: 320px; */
     background-color: rgba(245, 245, 245, 1);
 
 }
@@ -571,12 +610,12 @@ nav{
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 50%;
     height: 90px;
-    padding: 5px 20px 20px 5px;
+    padding: 5px 20px 50px 5px;
     font-size: 17pt;
-    resize: none;
+    resize: vertical;
 }
 #inputprompts {
     height: auto;
@@ -601,8 +640,8 @@ nav{
 #topchevron{
     
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     margin: auto;
     color: rgba(0, 0, 0, .5);
     transition-duration: .33s;
@@ -612,7 +651,7 @@ nav{
     transition-duration: .33s;
 }
 #topchev:hover #pagecloser{
-    font-size: 2.1em;
+    font-size: 1.7em;
     color: rgba(0, 0, 0, .8);
     transition-duration: .33s;
 }
@@ -621,7 +660,7 @@ nav{
 }
 #pagecloser{
     display: block;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: 'raleway';
     margin: auto;
     width: fit-content;
@@ -713,41 +752,42 @@ footer a:hover{
     #certlink{
         display: none;
     }
-    #flex{
-        height: auto;
-        min-width: auto;    
-        background-image: url(../images/webbuild.svg), url(../images/stripes.jpg);
-        background-position:  90% 100px, right top;
-        background-size: 34vw 650px, 100% 100%;
-        background-repeat: no-repeat, repeat;
-    }
 }
-@media only screen and (max-width: 1031px){
+@media only screen and (max-width: 1167px){
+    #hero{
+        margin-top: 0px;
+    }
     .skillshead{
-        float: left;
-        margin: 100px 15% 0% 15%;
-        width: 70%;
-    }
-    #primarycta{
         clear: both;
-        margin-bottom: 500px;
-        margin-left: 15%;
-        transform: translateY(-10px);
+        margin: 100px 20% 0% 20%;
+        width: 65%;
     }
+    #heroimage{
+        clear: both;
+        margin: 0 20% 0 20%;
+        width: 60%;
+    }
+    
     #flex{
         height: auto;
         min-width: auto;    
-        background-image: url(../images/webbuild.svg), url(../images/stripes.jpg);
-        background-position:  55% 350px, right top;
-        background-size: 650px 650px, 100% 100%;
-        background-repeat: no-repeat, repeat;
+        background-image:  url(../images/stripes.jpg);
+        background-position: right top;
+        background-size: 100% 100%;
+        background-repeat: repeat;
     }
     .whyhead{
         float: left;
-        margin: 0px 22% 160px 5%;
-        width: 90%;
-        
+        margin: 0px 0% 160px 15%;
+        width: 80%;
     }
+    #secondaryheader{
+        font-size: 2.75em;
+    }
+    #secondarybody{
+        width: 80%;
+    }
+
     .contentcontainer{
         clear: both;
         height: 700px;
@@ -758,16 +798,8 @@ footer a:hover{
     }
 }
 
-@media screen and (max-width: 830px){
-    
-    #flex{
-        height: auto;
-        min-width: auto;    
-        background-image: url(../images/webbuild.svg), url(../images/stripes.jpg);
-        background-position:  55% 350px, right top;
-        background-size: 80% 550px, 100% 100%;
-        background-repeat: no-repeat, repeat;
-    }
+@media screen and (max-width: 870px){
+
     .navcta{
         font-family: 'Raleway', Verdana, sans-serif;
         /* vertical-align: middle;
@@ -803,10 +835,7 @@ footer a:hover{
         margin: 5px;
     }
     #primarycta{
-        clear: both;
-        margin-bottom: 500px;
-        margin-left: 15%;
-        transform: translateY(-10px);
+        
     }
     .content{
         float: left;
@@ -891,9 +920,10 @@ footer a:hover{
      #contactinputlrg{
         margin-top: 50px;
         height: 200px;
+        margin-bottom: 50px;
     }
      #contactbody{
-        height: 450px;
+        /* height: 450px; */
     }
      .basiccta{
         margin-right: 2%;
@@ -928,7 +958,7 @@ footer a:hover{
         width: 80%;
     }
      #contactbody{
-        height: 675px;
+        /* height: 675px; */
     }
     #sendbutton{
         transform: translateY(-12.5px) translateX(-10px);
@@ -941,7 +971,7 @@ footer a:hover{
     }
 }
 
-@media screen and (max-width: 606px){
+@media screen and (max-width: 650px){
     nav{
         height: 75px;
     }
@@ -1023,24 +1053,21 @@ footer a:hover{
         display: none;
         font-family: 'raleway';
     }
-    #flex{
-        height: auto;
-        min-width: auto;    
-        background-image: url(../images/webbuild.svg), url(../images/stripes.jpg);
-        background-position:  55% 275px, right top;
-        background-size: 80% 550px, 100% 100%;
-        background-repeat: no-repeat, repeat;
-    }
     .skillshead{
     float: left;
-    margin: 100px 5% 0% 5%;
-    width: 90%;
+    margin: 100px 10% 0% 10%;
+    width: 80%;
+    }
+    #heroimage{
+        clear: both;
+        margin: 0 10% 0 10%;
+        width: 80%;
     }
     #primarycta{
-        clear: both;
-        margin-bottom: 375px;
-        margin-left: 5%;
-        transform: translateY(-10px);
+        font-size: 1.1em;
+    }
+    #secondaryheader{
+        font-size: 2em;
     }
     .contentfirst{
         float: left;
@@ -1090,21 +1117,20 @@ footer a:hover{
     }
 
 }
-@media screen and (max-width: 474px){
-    #flex{
-        height: auto;
-        min-width: auto;    
-        background-image: url(../images/webbuild.svg), url(../images/stripes.jpg);
-        background-position:  55% 200px, right top;
-        background-size: 80% 550px, 100% 100%;
-        background-repeat: no-repeat, repeat;
-    }
+@media screen and (max-width: 531px){
     
     #primarycta{
-        clear: both;
+        /* clear: both;
         margin-bottom: 300px;
         margin-left: 5%;
-        transform: translateY(-10px);
+        transform: translateY(-10px); */
+    }
+    #heroimage{
+        position: relative;
+        clear: both;
+        margin: 0 10% 0 10%;
+        width: 80%;
+        height: 300px;
     }
     .herotitle{
         font-family: 'lora','Arial Narrow Bold', sans-serif;
@@ -1174,8 +1200,8 @@ footer a:hover{
     }
     .whyhead{
         float: left;
-        margin: 0px 22% 100px 18%;
-        width: 66%;
+        margin: 0px 10% 100px 10%;
+        width: 80%;
         
     }
     #aboutmebox{
@@ -1206,6 +1232,18 @@ footer a:hover{
         top: 50px;
     }
 }
-@media screen and (max-width: 319px){
-    *{display: initial;}
+@media screen and (max-width: 350px){
+    .skillshead{
+        clear: both;
+        margin: 75px 5% 0% 5%;
+        width: 90%;
+    }
+    #heroimage{
+        position: relative;
+        clear: both;
+        margin: 0 7.5% 0 7.5%;
+        width: 85%;
+        height: 300px;
+        
+    }
 }

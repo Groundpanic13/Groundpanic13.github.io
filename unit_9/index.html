@@ -20,23 +20,23 @@
     <nav>
 
         <a id="contactcta" class="navcta clearfix floatright" >
-            <p>Contact</p>
+            Contact
         </a>
 
         <a id="aboutmecta" class="navcta clearfix floatright">
-            <p>About Me</p>
+            About Me
        </a>
 
         <a id="webdesigncta" class="navcta clearfix floatright" href="certification.html">
-            <p>Certification</p>
+            Certification
         </a>
 
         <a id="skillslink" class="navcta clearfix floatright" href="skills.html">
-            <p>Skills</p>
+            Skills
         </a>
 
         <a id="certlink" class="navcta clearfix floatright" href="webdesign.html">
-            <p>Web Design</p>
+            Web Design
         </a>
         
         <div class="dropdown">
@@ -62,14 +62,24 @@
     
     
         <main>
-            <section class="skillshead">
-                <h2 class="herotitle">What is SunriseArc?</h2>
-                <p  class="herocaption ibm">SunriseArc is a freelance web development service incorporating reliable and industry-standard elements to create beautiful designs.</p>
-            </section>
+            <div id="hero">
 
-            <a id="primarycta" class="navcta clearfix floatleft" >
-                <p>Contact</p>
-            </a>
+                <section class="skillshead">
+
+                    <h2 class="herotitle" id="whathead">What is SunriseArc?</h2>
+
+                    <p  class="herocaption ibm" id="whatheaddesc">SunriseArc is a freelance web development service incorporating reliable and industry-standard elements to create beautiful designs.</p>
+
+                    <a id="primarycta" >
+                        Contact
+                    </a>
+
+                </section>
+
+                <div id="heroimage"></div>
+
+            </div>
+
 
             <section class="contentcontainer">
                 <a href="webdesign.html" class="contentfirst" id="uxredirect">
@@ -81,8 +91,8 @@
             
 
             <section class="whyhead">
-                <h2 class="herotitle">Why should you trust SunriseArc?</h2>
-                <p  class="herocaption ibm">SunriseArc is a combination of creative-thinking, great design, and hard work. Don't just take my word for it, see below to check for yourself. </p>
+                <h2 id="secondaryheader">Why should you trust SunriseArc?</h2>
+                <p  class="herocaption ibm" id="secondarybody">SunriseArc is a combination of creative-thinking, great design, and hard work. Don't just take my word for it, see below to check for yourself. </p>
             </section>
 
            
@@ -122,14 +132,14 @@
                     <p class="aboutmeheader merri">Contact</p>
                 </div>
 
-                <div id="contactbody">
+                <div id="contactbody" class="clearfix">
 
-                    <form action="submit.php">
+                    <form action="submit.php" method="POST">
                     
                             <!-- name label and input -->
                             <label class="contactsect clearfix" id="namespacer">Name</label>
 
-                            <textarea wrap="hard" placeholder="name" class="contactinput clearfix" ></textarea>
+                            <textarea wrap="hard" placeholder="name" class="contactinput clearfix" name="name"></textarea>
 
                             <!-- name and label end -->
 
@@ -137,19 +147,23 @@
                             <label class="contactsect clearfix">Email <i>(required)
                             </i></label>
 
-                            <textarea wrap="hard" class="contactinput clearfix" placeholder="email"></textarea>
+                            <textarea wrap="hard" class="contactinput clearfix" placeholder="email" name="mail"></textarea>
 
                             <!-- email and label end -->
+
+                            <label class="contactsect clearfix">Subject</label>
+
+                            <textarea wrap="hard" class="contactinput clearfix" placeholder="subject" name="subject"></textarea>
 
                             <!-- message label and input -->
                             <label class="contactsect clearfix" id="messagespacer">Message</label>
 
-                            <textarea wrap="hard" id="contactinputlrg" placeholder="What would you like to say?"></textarea>
+                            <textarea wrap="hard" id="contactinputlrg" placeholder="What would you like to say?" name="message"></textarea>
 
                             <!--   -->
                 </div>
-                        <div class="contentbar">
-                            <input class="basiccta" id="sendbutton" type="submit" value="Send">
+                        <div class="contentbar clearfix">
+                            <input class="basiccta" id="sendbutton" type="submit" value="Send" name="submit">
                         </div>
 
                     </form>
