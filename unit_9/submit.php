@@ -8,11 +8,11 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message'];
 
     $mailto = "flynn222@live.com";
-    $headers = "From: ".$mailfrom;
+    $headers = "From: $mailFrom";
     $txt = "You have recieved an email from ".$name. ".\n\n".$message;
 
     mail($mailto, $subject, $txt, $headers);
-    header("Location: index.html?mailsend");
+    header("Location: mailsent.html");
 }
 
 
