@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    font-size: 16px;
+}
+#wrapper{
+    height: 100vh;
+    position: relative;
+    background-color: #f7faff;
+}
+#content{
+    position: relative;
+    width: 100%;
+    top: 10vh;
+}
+h1{
+    text-align: center;
+    font-family: 'merriweather';
+    font-size: 3em;
+    line-height: 2em;
+}
+p{
+    text-align: left;
+    font-family: 'ibm plex sans';
+    font-size: 1.3em;
+    width: 40%;
+    margin: auto;
+    line-height: 1.2em;
+}
+#mailsent{
+    position: relative;
+    top: 5vh;
+    display: block;
+    margin: auto;
+    height: 30%;
+    width: 30%;
+}
+@media only screen and (max-width: 1289px){
+    p{
+        width: 50%;
+    }
+    #mailsent{
+        height: 40%;
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 862px){
+    p{
+        width: 70%;
+    }
+    #mailsent{
+        height: 60%;
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 550px){
+    p{
+        width: 85%;
+    }
+    #mailsent{
+        height: 70%;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 458px){
+    body{
+        font-size: 12px;
+    }
+    p{
+        width: 90%;
+    }
+    #mailsent{
+        height: 80%;
+        width: 80%;
+    }
+}
